@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Telephone Directory - BGSBU</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Fixed Cross Icon to go back -->
+  <button onclick="history.back()" class="fixed top-4 right-4 z-50 p-2 bg-white rounded-full shadow hover:bg-gray-200">
+    <i class="fas fa-times text-gray-800"></i>
+  </button>
+
+  <main class="container mx-auto p-6">
+    <!-- Page Header -->
+    <header class="text-center mb-8">
+      <h1 class="text-4xl font-bold">Telephone Directory</h1>
+      <p class="mt-4 text-lg">Baba Ghulam Shah Badshah University</p>
+    </header>
+    
+    <!-- Responsive Table Container -->
+    <div class="overflow-x-auto">
+      <table class="min-w-full border-collapse">
+        <!-- Table Header -->
+        <thead>
+          <tr class="bg-gradient-to-r from-teal-500 to-blue-500 text-white">
+            <th class="px-4 py-2 border">Section</th>
+            <th class="px-4 py-2 border">Designation</th>
+            <th class="px-4 py-2 border">Name</th>
+            <th class="px-4 py-2 border">Contact</th>
+            <th class="px-4 py-2 border">Email</th>
+          </tr>
+        </thead>
+        <!-- Table Body -->
+        <tbody class="text-sm">
+          <!-- 1. Vice Chancellor's Secretariat -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Vice Chancellor's Secretariat</td>
+            <td class="px-4 py-2 border">Vice Chancellor</td>
+            <td class="px-4 py-2 border">Prof. Jawaid Iqbal</td>
+            <td class="px-4 py-2 border">01962-241001</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 2. Registrar -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Registrar</td>
+            <td class="px-4 py-2 border">Registrar</td>
+            <td class="px-4 py-2 border">Mr. Abhishek Sharma (IAS)</td>
+            <td class="px-4 py-2 border">01962-241002</td>
+            <td class="px-4 py-2 border"><a href="mailto:registrar@bgsbu.ac.in" class="text-teal-600 hover:underline">registrar@bgsbu.ac.in</a></td>
+          </tr>
+          <!-- 3. Registrar - Joint Registrar (Estates/Estab) -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Registrar</td>
+            <td class="px-4 py-2 border">Joint Registrar (Estates/Estab)</td>
+            <td class="px-4 py-2 border">Mr. M. Qasim Kohli</td>
+            <td class="px-4 py-2 border">9419170266</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 4. Academic Affairs - Dean Academic Affairs -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Academic Affairs</td>
+            <td class="px-4 py-2 border">Dean Academic Affairs</td>
+            <td class="px-4 py-2 border">Prof. M. J. Warsi</td>
+            <td class="px-4 py-2 border">01962-241003</td>
+            <td class="px-4 py-2 border"><a href="mailto:daa@bgsbu.ac.in" class="text-teal-600 hover:underline">daa@bgsbu.ac.in</a></td>
+          </tr>
+          <!-- 5. Academic Affairs - Deputy Registrar (Academics) -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Academic Affairs</td>
+            <td class="px-4 py-2 border">Deputy Registrar (Academics)</td>
+            <td class="px-4 py-2 border">Ms. Shabina Nazir</td>
+            <td class="px-4 py-2 border">01962-241003</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 6. Deans of Various Schools - Dean (Islamic Studies, Management Studies & Economics, Education) -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Deans of Various Schools</td>
+            <td class="px-4 py-2 border">Dean - Islamic Studies, Management Studies &amp; Economics, Education</td>
+            <td class="px-4 py-2 border">Prof. M. J. Warsi</td>
+            <td class="px-4 py-2 border">01962-241002</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 7. Deans of Various Schools - Associate Dean (Biosciences/ENGT/Math & CS/Material Science & Nanotech/Social Sciences) -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Deans of Various Schools</td>
+            <td class="px-4 py-2 border">Associate Dean - Biosciences, Engineering &amp; Technology, Math &amp; CS, Material Science &amp; Nanotech, Social Sciences</td>
+            <td class="px-4 py-2 border">Dr. Ali Asghar Shah</td>
+            <td class="px-4 py-2 border">9419175567</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 8. Deans of Various Schools - Associate Dean (Nursing and Biomedical Sciences) -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Deans of Various Schools</td>
+            <td class="px-4 py-2 border">Associate Dean - Nursing and Biomedical Sciences</td>
+            <td class="px-4 py-2 border">Dr. Titi Xavier</td>
+            <td class="px-4 py-2 border">9799406600</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 9. Examinations - Controller of Examination -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Examinations</td>
+            <td class="px-4 py-2 border">Controller of Examination</td>
+            <td class="px-4 py-2 border">Sh. Mohammad Ishaq</td>
+            <td class="px-4 py-2 border">01962-241007</td>
+            <td class="px-4 py-2 border"><a href="mailto:coe@bgsbu.ac.in" class="text-teal-600 hover:underline">coe@bgsbu.ac.in</a></td>
+          </tr>
+          <!-- 10. Examinations - Deputy Controller of Examination -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Examinations</td>
+            <td class="px-4 py-2 border">Deputy Controller of Examination</td>
+            <td class="px-4 py-2 border">Ms. Nabila Nazneen</td>
+            <td class="px-4 py-2 border">01962-241005</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 11. Students Welfare - Associate Dean of Students -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Students Welfare</td>
+            <td class="px-4 py-2 border">Associate Dean of Students</td>
+            <td class="px-4 py-2 border">Dr. A.A. Shah</td>
+            <td class="px-4 py-2 border">09419175567 / 01962-241016</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 12. Students Welfare - Chief Warden (Sir Syed Hall) -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Students Welfare</td>
+            <td class="px-4 py-2 border">Chief Warden (Sir Syed Hall)</td>
+            <td class="px-4 py-2 border">Dr. Shams Kamal Anjum</td>
+            <td class="px-4 py-2 border">9086180380</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 13. Students Welfare - Chief Warden (Fatima Zohra Hall) -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Students Welfare</td>
+            <td class="px-4 py-2 border">Chief Warden (Fatima Zohra Hall)</td>
+            <td class="px-4 py-2 border">Dr. Saima Aslam</td>
+            <td class="px-4 py-2 border">7006529276</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 14. Teaching Departments - Principal College of Engineering & Technology -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Principal College of Engineering &amp; Technology</td>
+            <td class="px-4 py-2 border">Dr. Vishal Puri</td>
+            <td class="px-4 py-2 border">7780884031</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 15. Teaching Departments - Head Zoology -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Head Zoology</td>
+            <td class="px-4 py-2 border">Dr. A.A. Shah</td>
+            <td class="px-4 py-2 border">6005720071</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 16. Teaching Departments - Coordinator Centre for Biodiversity Studies -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Coordinator Centre for Biodiversity Studies</td>
+            <td class="px-4 py-2 border">Dr. Shreekar Pant</td>
+            <td class="px-4 py-2 border">9419173280</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 17. Teaching Departments - Coordinator Biotechnology -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Coordinator Biotechnology</td>
+            <td class="px-4 py-2 border">Dr. Tanvir Ul Hassan Dar</td>
+            <td class="px-4 py-2 border">7006603181</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 18. Teaching Departments - Head Management Studies -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Head Management Studies</td>
+            <td class="px-4 py-2 border">Mrs. Mamta Choudhary</td>
+            <td class="px-4 py-2 border">7780990747</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 19. Teaching Departments - Coordinator, Hospitality &amp; Tourism -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Coordinator, Hospitality &amp; Tourism</td>
+            <td class="px-4 py-2 border">Mr. Asrar Ghaus</td>
+            <td class="px-4 py-2 border">9419256734</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 20. Teaching Departments - Head Arabic -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Head Arabic</td>
+            <td class="px-4 py-2 border">Dr. Shams Kamal Anjum</td>
+            <td class="px-4 py-2 border">9086180380</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 21. Teaching Departments - Head Computer Science -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Head Computer Science</td>
+            <td class="px-4 py-2 border">Dr. Majid Bashir Malik</td>
+            <td class="px-4 py-2 border">9419182881</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 22. Teaching Departments - Head Information Technology -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Head Information Technology</td>
+            <td class="px-4 py-2 border">Dr. Tasleem Arif</td>
+            <td class="px-4 py-2 border">9419174250</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 23. Teaching Departments - Head Mathematical Sciences -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Head Mathematical Sciences</td>
+            <td class="px-4 py-2 border">Dr. Zaheer Abass</td>
+            <td class="px-4 py-2 border">9419277404</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 24. Teaching Departments - Head Economics -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Head Economics</td>
+            <td class="px-4 py-2 border">Dr. Dil Pazir</td>
+            <td class="px-4 py-2 border">7780840199</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 25. Teaching Departments - Head English -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Head English</td>
+            <td class="px-4 py-2 border">Dr. Romina Rashid</td>
+            <td class="px-4 py-2 border">9419199055</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 26. Teaching Departments - Head Electronics &amp; Communication Engineering -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Head Electronics &amp; Communication Engineering</td>
+            <td class="px-4 py-2 border">Dr. Vishal Puri</td>
+            <td class="px-4 py-2 border">9858593316</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 27. Teaching Departments - Coordinator Information Technology Engineering -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Coordinator Information Technology Engineering</td>
+            <td class="px-4 py-2 border">Mr. Rakesh Singh Sambyal</td>
+            <td class="px-4 py-2 border">9419172012</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 28. Teaching Departments - Head Computer Science &amp; Engineering -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Head Computer Science &amp; Engineering</td>
+            <td class="px-4 py-2 border">Mr. Khalil Ahmed</td>
+            <td class="px-4 py-2 border">7889378152</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 29. Teaching Departments - Head Civil Engineering -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Head Civil Engineering</td>
+            <td class="px-4 py-2 border">Dr. Pervez Alam</td>
+            <td class="px-4 py-2 border">9086373632</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 30. Teaching Departments - Head Electrical Engineering -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Head Electrical Engineering</td>
+            <td class="px-4 py-2 border">Dr. Shafqat Nabi Mughal</td>
+            <td class="px-4 py-2 border">9419154432</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 31. Teaching Departments - Head Physics -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Head Physics</td>
+            <td class="px-4 py-2 border">Dr. Feroz Ahmed Mir</td>
+            <td class="px-4 py-2 border">7780887961</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 32. Teaching Departments - Coordinator, Education -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Coordinator, Education</td>
+            <td class="px-4 py-2 border">Dr. Nayyar Jabeen</td>
+            <td class="px-4 py-2 border">8492826258</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 33. Teaching Departments - Coordinator, Islamic Studies -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Coordinator, Islamic Studies</td>
+            <td class="px-4 py-2 border">Dr. Naseem Gul</td>
+            <td class="px-4 py-2 border">7006151800</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 34. Teaching Departments - Coordinator, Urdu -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Coordinator, Urdu</td>
+            <td class="px-4 py-2 border">Dr. Layaqat Nayar</td>
+            <td class="px-4 py-2 border">7889477421</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 35. Teaching Departments - Coordinator, Botany -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Coordinator, Botany</td>
+            <td class="px-4 py-2 border">Dr. Mohd Asgher</td>
+            <td class="px-4 py-2 border">9622184466</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 36. Teaching Departments - Nodal Officer B.Voc. Programme & Community College -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Nodal Officer B.Voc. Programme &amp; Community College</td>
+            <td class="px-4 py-2 border">Dr. Danish Iqbal Raina</td>
+            <td class="px-4 py-2 border">7780927045</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 37. Teaching Departments - Coordinator, Centre for Research in Gojri, Pahari and Kashmiri Languages -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Coordinator, Centre for Research in Gojri, Pahari and Kashmiri Languages</td>
+            <td class="px-4 py-2 border">Dr. Mohammad Rafiq Anjum</td>
+            <td class="px-4 py-2 border">9469000044</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 38. Teaching Departments - Principal, University Polytechnic -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Teaching Departments</td>
+            <td class="px-4 py-2 border">Principal, University Polytechnic</td>
+            <td class="px-4 py-2 border">Dr. Shafqat Nabi Mughal</td>
+            <td class="px-4 py-2 border">9419154432</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 39. Nursing Colleges - Principal Nursing College Rajouri -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Nursing Colleges</td>
+            <td class="px-4 py-2 border">Principal Nursing College Rajouri</td>
+            <td class="px-4 py-2 border">Dr. Titi Xavier</td>
+            <td class="px-4 py-2 border">9799406600</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 40. Nursing Colleges - Principal Nursing College Jammu -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Nursing Colleges</td>
+            <td class="px-4 py-2 border">Principal Nursing College Jammu</td>
+            <td class="px-4 py-2 border">Dr. Pushpendra Kumar</td>
+            <td class="px-4 py-2 border">9799567700</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 41. Nursing Colleges - Coordinator Nursing College Kishtwar -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Nursing Colleges</td>
+            <td class="px-4 py-2 border">Coordinator Nursing College Kishtwar</td>
+            <td class="px-4 py-2 border">Mr. Ajit K K</td>
+            <td class="px-4 py-2 border">9072355242</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 42. Security Wing - Chief Proctor -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Security Wing</td>
+            <td class="px-4 py-2 border">Chief Proctor</td>
+            <td class="px-4 py-2 border">Dr. Pervez Alam</td>
+            <td class="px-4 py-2 border">8860204206</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 43. Information Officers - Media Advisor -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Information Officers</td>
+            <td class="px-4 py-2 border">Media Advisor</td>
+            <td class="px-4 py-2 border">Dr. Danish Iqbal Raina</td>
+            <td class="px-4 py-2 border">7780927045</td>
+            <td class="px-4 py-2 border"><a href="mailto:mediaadvisor@bgsbu.ac.in" class="text-teal-600 hover:underline">mediaadvisor@bgsbu.ac.in</a></td>
+          </tr>
+          <!-- 44. Information Officers - Asst. Public Information Officer -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Information Officers</td>
+            <td class="px-4 py-2 border">Asst. Public Information Officer</td>
+            <td class="px-4 py-2 border">Dr. Iftkhar Hussain Shah</td>
+            <td class="px-4 py-2 border">7006366829</td>
+            <td class="px-4 py-2 border"><a href="mailto:iftkharshah@bgsbu.ac.in" class="text-teal-600 hover:underline">iftkharshah@bgsbu.ac.in</a></td>
+          </tr>
+          <!-- 45. Physical Education and Sports - Directorate, Physical Education and Sports -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Physical Education and Sports</td>
+            <td class="px-4 py-2 border">Directorate, Physical Education and Sports</td>
+            <td class="px-4 py-2 border">Dr. Majid Bashir Malik</td>
+            <td class="px-4 py-2 border">9419182881</td>
+            <td class="px-4 py-2 border"><a href="mailto:ddsports@bgsbu.ac.in" class="text-teal-600 hover:underline">ddsports@bgsbu.ac.in</a></td>
+          </tr>
+          <!-- 46. Engineering Wing - Officer Incharge -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Engineering Wing</td>
+            <td class="px-4 py-2 border">Officer Incharge</td>
+            <td class="px-4 py-2 border">Dr. A.A. Shah</td>
+            <td class="px-4 py-2 border">6005720071</td>
+            <td class="px-4 py-2 border"><a href="mailto:officerinchargeworkswing@bgsbu.ac.in" class="text-teal-600 hover:underline">officerinchargeworkswing@bgsbu.ac.in</a></td>
+          </tr>
+          <!-- 47. Engineering Wing - Executive Engineer -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Engineering Wing</td>
+            <td class="px-4 py-2 border">Executive Engineer</td>
+            <td class="px-4 py-2 border">Er. Bushan Lal Koul</td>
+            <td class="px-4 py-2 border">01962-241009</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 48. National Knowledge Network - Project Coordinator (NKN) -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">National Knowledge Network</td>
+            <td class="px-4 py-2 border">Project Coordinator (NKN)</td>
+            <td class="px-4 py-2 border">Dr. Qamar Rayees Khan</td>
+            <td class="px-4 py-2 border">7889631673</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 49. National Knowledge Network - Technical Support (NKN) -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">National Knowledge Network</td>
+            <td class="px-4 py-2 border">Technical Support (NKN)</td>
+            <td class="px-4 py-2 border">Mr. Shahzad Ahmed Zargar</td>
+            <td class="px-4 py-2 border">7006367030</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 50. Library - Incharge, Central Library -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Library</td>
+            <td class="px-4 py-2 border">Incharge, Central Library</td>
+            <td class="px-4 py-2 border">Dr. Malik Mubasher Hassan</td>
+            <td class="px-4 py-2 border">7298286036, 01962-241004</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 51. Library - Assistant Librarian -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Library</td>
+            <td class="px-4 py-2 border">Assistant Librarian</td>
+            <td class="px-4 py-2 border">Sh. Ramesh Pandita</td>
+            <td class="px-4 py-2 border">9419203942, 01962-241004</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 52. Health Centre - Officer Incharge, University Health Centre -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Health Centre</td>
+            <td class="px-4 py-2 border">Officer Incharge, University Health Centre</td>
+            <td class="px-4 py-2 border">Dr. Haider Mehraj</td>
+            <td class="px-4 py-2 border">7006298484, 01962-241011</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 53. Health Centre - Medical Officer -->
+          <tr class="bg-gray-50 hover:bg-white">
+            <td class="px-4 py-2 border">Health Centre</td>
+            <td class="px-4 py-2 border">Medical Officer</td>
+            <td class="px-4 py-2 border">Dr. Javaid Reshi</td>
+            <td class="px-4 py-2 border">9469233941, 01962-241011</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 54. International Student's Cell - International Student Advisor -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">International Student's Cell</td>
+            <td class="px-4 py-2 border">International Student Advisor</td>
+            <td class="px-4 py-2 border">Dr. Zaheer Abbas</td>
+            <td class="px-4 py-2 border">7889473046</td>
+            <td class="px-4 py-2 border"><a href="mailto:zam@bgsbu.ac.in" class="text-teal-600 hover:underline">zam@bgsbu.ac.in</a></td>
+          </tr>
+          <!-- 55. International Student's Cell - Nodal Officer -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">International Student's Cell</td>
+            <td class="px-4 py-2 border">Nodal Officer</td>
+            <td class="px-4 py-2 border">Mr. Vinay Kumar</td>
+            <td class="px-4 py-2 border">9858186071</td>
+            <td class="px-4 py-2 border"><a href="mailto:vinaysharma@bgsbu.ac.in" class="text-teal-600 hover:underline">vinaysharma@bgsbu.ac.in</a></td>
+          </tr>
+          <!-- 56. Arboriculture - Arboriculturist -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Arboriculture</td>
+            <td class="px-4 py-2 border">Arboriculturist</td>
+            <td class="px-4 py-2 border">Mr. Shakeel Choudhary</td>
+            <td class="px-4 py-2 border">94697681920</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 57. Arboriculture - Assistant Horticulturist -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Arboriculture</td>
+            <td class="px-4 py-2 border">Assistant Horticulturist</td>
+            <td class="px-4 py-2 border">Mr. Sachin Ahanger</td>
+            <td class="px-4 py-2 border">9419117499</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 58. Camp Office Jammu - Incharge -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Camp Office Jammu</td>
+            <td class="px-4 py-2 border">Incharge</td>
+            <td class="px-4 py-2 border">Ms. Iram Amin Baig</td>
+            <td class="px-4 py-2 border">9419103565, 0191-2446892</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 59. Regional Office Srinagar - Incharge -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Regional Office Srinagar</td>
+            <td class="px-4 py-2 border">Incharge</td>
+            <td class="px-4 py-2 border">Mr. Abid Hussain Qadri</td>
+            <td class="px-4 py-2 border">0194-2441231</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 60. Sub Office Kishtwar - Incharge -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Sub Office Kishtwar</td>
+            <td class="px-4 py-2 border">Incharge</td>
+            <td class="px-4 py-2 border">Mr. Aziz Ahmed</td>
+            <td class="px-4 py-2 border">9469251944</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 61. Innovation and Start Up Cell - Coordinator -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Innovation and Start Up Cell</td>
+            <td class="px-4 py-2 border">Coordinator</td>
+            <td class="px-4 py-2 border">Dr. Farkhanda Ana</td>
+            <td class="px-4 py-2 border">–</td>
+            <td class="px-4 py-2 border">–</td>
+          </tr>
+          <!-- 62. Centre for IT Enabled Services (CITES) - Coordinator, CITES -->
+          <tr class="bg-white hover:bg-gray-50">
+            <td class="px-4 py-2 border">Centre for IT Enabled Services (CITES)</td>
+            <td class="px-4 py-2 border">Coordinator, CITES</td>
+            <td class="px-4 py-2 border">Dr. Manmeet Singh</td>
+            <td class="px-4 py-2 border">9797658158</td>
+            <td class="px-4 py-2 border"><a href="mailto:ccites@bgsbu.ac.in" class="text-teal-600 hover:underline">ccites@bgsbu.ac.in</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
