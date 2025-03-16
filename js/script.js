@@ -146,3 +146,26 @@ document.querySelectorAll('.group > button').forEach(button => {
         this.nextElementSibling.classList.toggle('hidden');
     });
 });
+
+
+
+
+
+
+  const designerBtn = document.getElementById('designer-btn');
+  const popup = document.getElementById('designer-popup');
+  const closePopup = document.getElementById('close-popup');
+
+  designerBtn.addEventListener('click', () => {
+    popup.classList.remove('hidden');
+  });
+
+  closePopup.addEventListener('click', () => {
+    popup.classList.add('hidden');
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === popup) {
+      popup.classList.add('hidden');
+    }
+  });
