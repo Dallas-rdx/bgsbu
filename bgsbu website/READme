@@ -1,0 +1,118 @@
+Project Overview
+
+             Official website of Baba Ghulam Shah Badshah University (BGSBU), featuring:
+
+            University leadership profiles
+
+            Academic departments & programs
+
+            Campus facilities and news updates
+
+            Administration details
+
+            Student resources and placement information
+
+
+Project Structure
+
+├── index.html                # Homepage
+
+├── pages/
+│   ├── Administration/
+│   │   └── Chancellor.html   # Chancellor's profile
+│   ├── Departments/
+│   │   ├── SOET         # SOET Folder
+│   │       ├── Academics.html    # Academic programs
+│   │       ├── Administration.html # College administration
+│   │       ├── department.html   # Department listings
+│   │       └── Placement.html    # Placement center
+        ├── SOET.html                 # School of Engineering & Tech
+
+├── css/
+│   └── styles.css            # Custom styles
+
+├── js/
+│   ├── script.js             # Main interactions
+│   └── search.js             # Search functionality
+
+├── images/                   # All visual assets
+│   ├── administration/
+│   ├── campus images/
+│   ├── departments/
+│   ├── news/
+│   └── other/
+
+└── README.txt                # This file
+
+Key Features
+
+  1 Responsive Design
+
+        Mobile-first approach
+
+        Hamburger menu for mobile
+
+        Fluid grid layouts
+
+  2 Interactive Elements
+
+        Animated dropdown menus
+
+        Search form with suggestions
+
+        Scroll-triggered animations (AOS)
+
+        Image galleries with hover effects 
+
+  3 Content Sections
+       
+       Leadership profiles with cards
+
+       Department overviews
+
+       News/Events marquee
+
+       Campus photo gallery
+
+       Quick links portal
+
+  4 Technical Stack
+ 
+    Tailwind CSS framework
+
+    Font Awesome icons
+
+    Google Fonts (Poppins)
+
+    AOS (Animate On Scroll)
+
+
+
+
+
+Third-Party Resources: Tailwind CSS (MIT)
+
+                       Font Awesome (CC BY 4.0)
+
+                       AOS Library (MIT)
+
+                       Google Fonts (OFL)
+
+
+Maintenance
+
+   1 Content Updates
+
+        Edit HTML files directly
+
+        Update image assets in /images
+
+        Modify styles.css for design changes
+
+   2 Dependencies
+
+        Keep Tailwind CSS updated
+
+        Maintain Font Awesome kit link
+
+        Check AOS compatibility

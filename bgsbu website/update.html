@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Update Soon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom gradient border without blur */
+    .gradient-border {
+      background: linear-gradient(45deg, #7dd3fc, #a5b4fc);
+      padding: 2px;
+      border-radius: 1rem;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center min-h-screen">
+  <div class="gradient-border">
+    <div class="bg-white rounded-xl p-8 shadow-xl text-center">
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">Update Soon</h1>
+      <p class="text-lg text-gray-700 mb-8">
+        We are working hard to update our content. Please check back soon for more information!
+      </p>
+      <button onclick="history.back()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+        Go Back
+      </button>
+    </div>
+  </div>
+</body>
+</html>
