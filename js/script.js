@@ -108,26 +108,22 @@ document.getElementById('lightbox').addEventListener('click', function (event) {
 
 
 
-//news scrolling
-function startMarquee() {
-  const marquee = document.getElementById("marquee");
-  const clone = marquee.cloneNode(true);
-  marquee.parentElement.appendChild(clone); // Duplicate for seamless effect
-
-  let speed = 2; // Adjust speed
-  let pos = 0;
-
-  function move() {
-    pos -= speed;
-    if (pos <= -marquee.scrollWidth) {
-      pos = 0; // Reset position when fully scrolled
-    }
-    marquee.style.transform = `translateX(${pos}px)`;
-    clone.style.transform = `translateX(${pos + marquee.scrollWidth}px)`;
-    requestAnimationFrame(move);
-  }
-
-  move();
+//news ,notice and events
+function openTab(tabName) {
+  const tabs = ['news', 'notices', 'academicEvents'];
+  tabs.forEach(tab => {
+      const tabContent = document.getElementById(tab);
+      const tabButton = document.getElementById(tab + 'Tab');
+      if (tab === tabName) {
+          tabContent.classList.remove('hidden');
+          tabButton.classList.add('active-tab');
+      } else {
+          tabContent.classList.add('hidden');
+          tabButton.classList.remove('active-tab');
+      }
+  });
 }
 
-window.onload = startMarquee;
+document.addEventListener('DOMContentLoaded', () => {
+  openTab('news');
+});
