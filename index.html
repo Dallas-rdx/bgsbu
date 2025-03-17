@@ -32,7 +32,7 @@
    
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>BGSB University</title>
    
@@ -434,79 +434,100 @@
 </section>
 
 
-
-
-
-
-<!-- Latest News & Updates Section -->
-<section id="news" class="bg-white py-16">
+<section id="updates-section" class="bg-white py-8 px-4 shadow-md rounded-lg">
   <div class="container mx-auto">
-    <h2 class="text-4xl font-extrabold text-center text-blue-800 mb-12 tracking-wide">Latest News & Updates</h2>
-
-    <div class="relative bg-white text-blue-800 py-3 px-6 rounded-lg overflow-hidden shadow-md mb-8">
-      <div class="marquee-container bg-white overflow-hidden whitespace-nowrap">
-        <div id="marquee" class="inline-flex space-x-16 text-lg font-semibold">
-          <span>📢 Admission Open for 2025! Apply Now!</span>
-          <span>🏆 University Sports Meet on April 15th!</span>
-          <span>🎭 Cultural Fest "Sabrang" Starts May 10th!</span>
-          <span>📚 Library Hours Extended for Exams!</span>
-        </div>
+      <div class="relative overflow-hidden mb-4">
+          <div class="marquee-container bg-white overflow-hidden whitespace-nowrap">
+              <div id="marquee" class="inline-flex space-x-16 text-lg font-semibold text-blue-800 animate-marquee">
+                  <span>📢 Admission Open for 2025! Apply Now!</span>
+                  <span>🏆 University Sports Meet on April 15th!</span>
+                  <span>🎭 Cultural Fest "Sabrang" Starts May 10th!</span>
+                  <span>📚 Library Hours Extended for Exams!</span>
+                  <span>🎉 New Research Grants Announced!</span>
+                  <span>🌐 International Student Exchange Program!</span>
+              </div>
+          </div>
       </div>
-    </div>
-
-    <!-- Events Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Event 1 -->
-      <div class="bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-2xl transition">
-        <h3 class="text-xl font-bold text-blue-800">Convocation Ceremony</h3>
-        <p class="text-gray-600 text-sm mb-2">📅 March 25, 2025</p>
-        <p class="text-blue-800">Join us to celebrate the success of our graduates.</p>
-      </div>
-
-      <!-- Event 2 -->
-      <div class="bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-2xl transition">
-        <h3 class="text-xl font-bold text-blue-800">Cultural Fest - Sabrang</h3>
-        <p class="text-gray-600 text-sm mb-2">📅 May 10, 2025</p>
-        <p class="text-blue-800">A week-long celebration of art, music, and performances.</p>
-      </div>
-
-      <!-- Event 3 -->
-      <div class="bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-2xl transition">
-        <h3 class="text-xl font-bold text-blue-800">University Sports Meet</h3>
-        <p class="text-gray-600 text-sm mb-2">📅 April 15, 2025</p>
-        <p class="text-blue-800">A competition featuring football, cricket, and athletics.</p>
-      </div>
-
-      <!-- Event 4 -->
-      <div class="bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-2xl transition">
-        <h3 class="text-xl font-bold text-blue-800">Library Extended Hours</h3>
-        <p class="text-gray-600 text-sm mb-2">📅 March 10 - April 30</p>
-        <p class="text-blue-800">Library remains open till 10 PM during exams.</p>
-      </div>
-
-      <!-- Event 5 -->
-      <div class="bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-2xl transition">
-        <h3 class="text-xl font-bold text-blue-800">Science & Tech Expo</h3>
-        <p class="text-gray-600 text-sm mb-2">📅 June 5, 2025</p>
-        <p class="text-blue-800">Explore innovative student projects and research.</p>
-      </div>
-
-      <!-- Event 6 -->
-      <div class="bg-blue-50 p-6 rounded-lg shadow-lg hover:shadow-2xl transition">
-        <h3 class="text-xl font-bold text-blue-800">Placement Drive</h3>
-        <p class="text-gray-600 text-sm mb-2">📅 July 20, 2025</p>
-        <p class="text-blue-800">Top companies hiring students across all disciplines.</p>
-      </div>
-    </div>
-
-    <!-- View All News Button -->
-    <div class="mt-10 text-center">
-      <a href="news.html" class="bg-blue-800 text-white font-bold py-5 px-10 rounded-full shadow-lg text-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
-        View All News
-      </a>
-    </div>
+      
   </div>
 </section>
+
+
+<section id="bhu-news-section" class="bg-white py-16">
+  <div class="container mx-auto">
+      <div class="flex justify-center mb-8">
+          <button id="newsTab" class="px-6 py-3 font-semibold text-white bg-blue-800 rounded-t-lg shadow-md mr-2 active-tab" onclick="openTab('news')">News</button>
+          <button id="noticesTab" class="px-6 py-3 font-semibold text-white bg-blue-800 rounded-t-lg shadow-md mr-2" onclick="openTab('notices')">Notices</button>
+          <button id="academicEventsTab" class="px-6 py-3 font-semibold text-white bg-blue-800 rounded-t-lg shadow-md" onclick="openTab('academicEvents')">Academic Events</button>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-4">
+          <div id="news" class="bg-blue-50 p-6 rounded-md shadow-md w-full text-center">
+              <h2 class="text-xl font-semibold text-blue-800 mb-4">News</h2>
+              <div class="mb-4 pb-4 border-b border-gray-200">
+                  <h4 class="font-semibold text-blue-700">Karma Yoga: Finding Joy in Every Action</h4>
+                  <p class="text-gray-600 text-sm">Sat, 01 Feb 2025</p>
+                  <a href="#" class="text-blue-500 hover:underline block mt-2 text-sm">Read More</a>
+              </div>
+              <div class="mb-4 pb-4 border-b border-gray-200">
+                  <h4 class="font-semibold text-blue-700">Team Building - Energising Workplace with Motivation</h4>
+                  <p class="text-gray-600 text-sm">Thu, 16 Jan 2025</p>
+                  <a href="#" class="text-blue-500 hover:underline block mt-2 text-sm">Read More</a>
+              </div>
+              <a href="#" class="text-blue-500 hover:underline block mt-4 text-sm">Read More>>></a>
+              <a href="#" class="text-blue-500 hover:underline block mt-2 text-sm">News Archival >></a>
+          </div>
+
+          <div id="notices" class="bg-blue-50 p-6 rounded-md shadow-md w-full hidden text-center">
+              <h2 class="text-xl font-semibold text-blue-800 mb-4">Notices</h2>
+              <div class="mb-4 pb-4 border-b border-gray-200">
+                  <h4 class="font-semibold text-blue-700">Eligibility criteria for the various subjects teacher in DA</h4>
+                  <p class="text-gray-600 text-sm">Fri, 10 Jan 2025</p>
+                  <a href="#" class="text-blue-500 hover:underline block mt-2 text-sm">Read More</a>
+              </div>
+              <div class="mb-4 pb-4 border-b border-gray-200">
+                  <h4 class="font-semibold text-blue-700">Notification of Conference/Seminar/Symposium/Work</h4>
+                  <p class="text-gray-600 text-sm">Wed, 08 Jan 2025</p>
+                  <a href="#" class="text-blue-500 hover:underline block mt-2 text-sm">Read More</a>
+              </div>
+              <a href="#" class="text-blue-500 hover:underline block mt-4 text-sm">Read More>>></a>
+              <a href="#" class="text-blue-500 hover:underline block mt-2 text-sm">Notice Archival >></a>
+          </div>
+
+          <div id="academicEvents" class="bg-blue-50 p-6 rounded-md shadow-md w-full hidden text-center">
+              <h2 class="text-xl font-semibold text-blue-800 mb-4">Academic Events</h2>
+              <div class="flex justify-center mb-4">
+                  <button class="px-3 py-1 text-sm font-semibold text-blue-700 bg-gray-100 rounded-full mr-2">Upcoming</button>
+                  <button class="px-3 py-1 text-sm font-semibold text-blue-700 bg-gray-100 rounded-full mr-2">Ongoing</button>
+                  <button class="px-3 py-1 text-sm font-semibold text-blue-700 bg-gray-100 rounded-full">Concluded</button>
+              </div>
+              <div class="mb-4 pb-4 border-b border-gray-200">
+                  <div class="flex justify-center items-start">
+                      <div>
+                          <h4 class="font-semibold text-blue-700">Indigenous Resources of Peacebuilding. Experiences from the Global South</h4>
+                          <p class="text-gray-600 text-sm">Thu, 18-Mar-2025</p>
+                      </div>
+                      <span class="bg-green-100 text-green-700 py-1 px-2 rounded-full text-xs font-semibold mt-1">Upcoming</span>
+                  </div>
+                  <a href="#" class="text-blue-500 hover:underline block mt-2 text-sm">Read More</a>
+              </div>
+              <div class="mb-4 pb-4 border-b border-gray-200">
+                  <div class="flex justify-center items-start">
+                      <div>
+                          <h4 class="font-semibold text-blue-700">2-Day Hands-on Training Program on Isotope Ratio Mass Spectrometry (IRMS)</h4>
+                          <p class="text-gray-600 text-sm">Fri, 20-Mar-2025</p>
+                      </div>
+                      <span class="bg-green-100 text-green-700 py-1 px-2 rounded-full text-xs font-semibold mt-1">Upcoming</span>
+                  </div>
+                  <a href="#" class="text-blue-500 hover:underline block mt-2 text-sm">Read More</a>
+              </div>
+              <a href="#" class="text-blue-500 hover:underline block mt-4 text-sm">Read More>>></a>
+              <a href="#" class="text-blue-500 hover:underline block mt-2 text-sm">Academic Events Archival >></a>
+          </div>
+      </div>
+  </div>
+</section>
+
 
 
 
